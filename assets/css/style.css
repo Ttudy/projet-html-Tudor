@@ -1,26 +1,79 @@
 body{
-    font-family: Poppins, sans-serif;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+span{
+    color: #c1121f;
 }
 
 .topbar{
     width: 100%;
+    padding: 1.2em 5em 1.2em 7em;
     display: flex;
-    justify-content: end;
-    background: linear-gradient(0deg, #320000, #320172);
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
 }
 
 .menu{
     display: flex;
     justify-content: space-between;
-    gap: 1em;
-    font-size: 1.2em;
-    color: white;
+    gap: 2em;
+    font-size: 1em;
     padding-right: 2em;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
 }
 
+
 main{
-    height: 150em;
-    background-color: #1A1A1A
+    background-color: #1A1A1A;
+    height: 200em;
+
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    background-image: url("../images/fond/fond_accueil.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 41em;
+}
+
+.hero div {
+    padding-left: 7em;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    padding-top: 0.2em;
+    font-size: 4.5em;
+    line-height: 1em;
+}
+
+.hero a{
+    margin-top: 1em;
+    width: fit-content;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    background-color: #c1121f;
+}
+
+.hero p:first-of-type{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: #c1121f;
+}
+
+.hero p:last-of-type{
+    color: #ccc;
+    padding: 1em 0;
 }
