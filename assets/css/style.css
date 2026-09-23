@@ -1,0 +1,26 @@
+body{
+    font-family: Poppins, sans-serif;
+}
+
+.topbar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(0deg, #320000, #320172);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-size: 1.2em;
+    color: white;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+main{
+    height: 150em;
+    background-color: #1A1A1A
+}
