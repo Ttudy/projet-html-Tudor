@@ -209,28 +209,30 @@ nav label{
     }
 
     .hero{
-        background-attachment: local;
-        height: 15em;
+        height: 17em;
+        text-align: center;
+        justify-content: center;
     }
     .hero div{
-        padding: 1em;
+        align-items: center;
+        padding: 0;
     }
 
     .hero p:nth-child(1){
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
 
     h1{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .hero p:last-of-type{
-        font-size: 0.5em;
+        font-size: 0.7em;
         width: 25em;
     }
 
     .hero a{
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 
     section:nth-child(2), section:nth-child(3){
