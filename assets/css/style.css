@@ -184,6 +184,7 @@ nav label{
     }
 
     #toggle:checked + .menu {
+        font-size: 0.7em;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
