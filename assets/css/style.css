@@ -20,6 +20,7 @@ span{
     justify-content: space-between;
     align-items: center;
     background: #111;
+    position: relative;
 }
 
 .menu{
@@ -75,12 +76,14 @@ section:nth-child(2) a, section:nth-child(3) a{
     background-size: 100%;
     width: 19em;
     height: 19em;
+    background-repeat: no-repeat;
 }
 
 section:nth-child(2) a:hover, section:nth-child(3) a:hover{
     position: relative;
     top: -0.3em;
 }
+
 section:nth-child(2) a:nth-child(1){
     background-image: url("../images/catégories/demon_slayer.jpeg");
 }
@@ -163,5 +166,88 @@ h1{
 
 .hero p:last-of-type{
     color: #ccc;
+    width: 38em;
     padding: 1em 0;
+}
+
+nav label{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .menu{
+        display: none;
+    }
+
+    nav label{
+        display: flex;
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2em;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 0.2em 1em;
+        background: #111;
+    }
+
+    .topbar{
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 1em;
+    }
+
+    .hero{
+        background-attachment: local;
+        height: 15em;
+    }
+    .hero div{
+        padding: 1em;
+    }
+
+    .hero p:nth-child(1){
+        font-size: 0.5em;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    .hero p:last-of-type{
+        font-size: 0.5em;
+        width: 25em;
+    }
+
+    .hero a{
+        font-size: 0.3em;
+    }
+
+    section:nth-child(2), section:nth-child(3){
+        padding: 2em 5em;
+    }
+
+    section:nth-child(2) span, section:nth-child(3) span{
+        font-size: 0.7em;
+    }
+
+    section:nth-child(2) p, section:nth-child(3) p{
+        font-size: 1.5em;
+    }
+
+    section:nth-child(2) a, section:nth-child(3) a{
+        width: 15em;
+        height: 15em;
+    }
+
+    section:nth-child(2) a:hover, section:nth-child(3) a:hover{
+        top: 0;
+    }
 }
