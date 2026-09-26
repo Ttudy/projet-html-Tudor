@@ -229,6 +229,7 @@ nav label{
     .hero p:last-of-type{
         font-size: 1em;
         width: 25em;
+        padding: 1em 1em;
     }
 
     .hero a{
