@@ -30,17 +30,10 @@ span{
     padding-right: 2em;
 }
 
-
-main{
-    background-color: #1A1A1A;
-    height: 200em;
-
-}
-
 .hero{
     display: flex;
     align-items: center;
-    background-image: url("../images/fond/fond_accueil.jpg");
+    background-image: url("../images/fond/fond_accueil.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
@@ -51,6 +44,97 @@ main{
     padding-left: 7em;
     display: flex;
     flex-direction: column;
+}
+
+section:nth-child(2), section:nth-child(3){
+    padding: 5em;
+    text-align: center;
+}
+
+section:nth-child(2) span, section:nth-child(3) span{
+    font-weight: 650;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+section:nth-child(2) p, section:nth-child(3) p{
+    margin-top: 0.1em;
+    margin-bottom: 1.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+section:nth-child(2) div, section:nth-child(3) div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.95em;
+}
+
+section:nth-child(2) a, section:nth-child(3) a{
+    background-size: 100%;
+    width: 19em;
+    height: 19em;
+}
+
+section:nth-child(2) a:hover, section:nth-child(3) a:hover{
+    position: relative;
+    top: -0.3em;
+}
+section:nth-child(2) a:nth-child(1){
+    background-image: url("../images/catégories/demon_slayer.jpeg");
+}
+
+section:nth-child(2) a:nth-child(2){
+    background-image: url("../images/catégories/one_piece.jpeg");
+}
+
+section:nth-child(2) a:nth-child(3){
+    background-image: url("../images/catégories/bleach.jpeg");
+}
+
+section:nth-child(2) a:nth-child(4){
+    background-image: url("../images/catégories/sword_art_online.jpeg");
+}
+
+section:nth-child(3) a:nth-child(1){
+    background-image: url("../images/produits/kyojuro.jpg");
+}
+
+section:nth-child(3) a:nth-child(2){
+    background-image: url("../images/produits/shusui.jpg");
+}
+
+section:nth-child(3) a:nth-child(3){
+    background-image: url("../images/produits/zangetsu.jpg");
+}
+
+section:nth-child(3) a:nth-child(4){
+    background-image: url("../images/produits/elucidator.jpg");
+}
+
+section:nth-child(2){
+    background-color: #111111;
+}
+
+section:nth-child(3){
+    background-color: #171717;
+}
+
+footer{
+    background-color: #070707;
+    text-align: center;
+    padding: 2.2em;
+}
+
+footer p:nth-child(1){
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+footer p:nth-child(2){
+    color: #7a7a7a;
 }
 
 h1{
@@ -65,6 +149,10 @@ h1{
     padding: 0.5em 1em;
     font-weight: bold;
     background-color: #c1121f;
+}
+
+.hero a:hover{
+    background-color: #b1101b;
 }
 
 .hero p:first-of-type{
