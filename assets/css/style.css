@@ -11,7 +11,7 @@ body{
 }
 
 span{
-    color: #c1121f;
+    color: #ff3247;
 }
 
 .topbar{
@@ -159,13 +159,12 @@ h1{
     background-color: #b1101b;
 }
 
-.hero p:first-of-type{
+.hero span{
     font-weight: bold;
     letter-spacing: 0.1em;
-    color: #c1121f;
 }
 
-.hero p:last-of-type{
+.hero p{
     color: #ccc;
     width: 38em;
     padding: 1em 0;
@@ -218,7 +217,7 @@ nav label{
         padding: 0;
     }
 
-    .hero p:nth-child(1){
+    .hero span{
         font-size: 1em;
     }
 
@@ -226,10 +225,9 @@ nav label{
         font-size: 2.3em;
     }
 
-    .hero p:last-of-type{
+    .hero p{
         font-size: 1em;
-        width: 25em;
-        padding: 1em 1em;
+        width: fit-content;
     }
 
     .hero a{
