@@ -74,47 +74,13 @@ section:nth-child(2) div, section:nth-child(3) div{
 }
 
 section:nth-child(2) a, section:nth-child(3) a{
-    background-size: 100%;
     width: 19em;
     height: 19em;
-    background-repeat: no-repeat;
 }
 
 section:nth-child(2) a:hover, section:nth-child(3) a:hover{
     position: relative;
     top: -0.3em;
-}
-
-section:nth-child(2) a:nth-child(1){
-    background-image: url("../images/catégories/demon_slayer.jpeg");
-}
-
-section:nth-child(2) a:nth-child(2){
-    background-image: url("../images/catégories/one_piece.jpeg");
-}
-
-section:nth-child(2) a:nth-child(3){
-    background-image: url("../images/catégories/bleach.jpeg");
-}
-
-section:nth-child(2) a:nth-child(4){
-    background-image: url("../images/catégories/sword_art_online.jpeg");
-}
-
-section:nth-child(3) a:nth-child(1){
-    background-image: url("../images/produits/kyojuro.jpg");
-}
-
-section:nth-child(3) a:nth-child(2){
-    background-image: url("../images/produits/shusui.jpg");
-}
-
-section:nth-child(3) a:nth-child(3){
-    background-image: url("../images/produits/zangetsu.jpg");
-}
-
-section:nth-child(3) a:nth-child(4){
-    background-image: url("../images/produits/elucidator.jpg");
 }
 
 section:nth-child(2){
