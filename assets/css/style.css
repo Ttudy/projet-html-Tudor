@@ -84,7 +84,7 @@ h1{
     height: 40em;
 }
 
-.hero a{
+.hero a, button{
     margin-top: 1em;
     width: fit-content;
     padding: 0.5em 1em;
@@ -92,7 +92,7 @@ h1{
     background-color: #c1121f;
 }
 
-.hero a:hover{
+.hero a:hover, button:hover{
     background-color: #b1101b;
 }
 
@@ -222,6 +222,10 @@ nav label{
         padding-bottom: 2.2em;
     }
 
+    .email{
+        padding-bottom: 5em;
+    }
+
     .email span{
         font-size: 1.5em;
         font-weight: 600;
@@ -236,6 +240,62 @@ nav label{
         color: #fff;
     }
 
+    form {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        flex-direction: column;
+        padding: 0 5em;
+    }
+
+    form label{
+        font-size: 1.5em;
+        color: #a1a1a1;
+    }
+
+    form input, select, textarea{
+        font-family: Arial, sans-serif;
+        outline: none;
+        font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding: 1em;
+        border: 0.1em solid #3f3f3f;
+        background-color: #242424;
+        color: #fff;
+        width: 100%;
+    }
+
+    form input:focus, select:focus, textarea:focus{
+        border-color: #ff3247;
+    }
+
+    form textarea{
+        height: 12em;
+    }
+
+    .informations{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5em;
+        align-items: center;
+    }
+
+    .informations label{
+        flex: 1;
+    }
+
+    .bouton{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bouton button{
+        padding: 1em 1.5em;
+        font-size: 1.2em;
+        color: #fff;
+        border: none;
+    }
 /* support */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
@@ -257,7 +317,8 @@ nav label{
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 0.2em 1em;
+        padding-left: 1em;
+        padding-bottom: 1em;
         background: #111;
     }
 
@@ -297,25 +358,16 @@ nav label{
         font-size: 0.8em;
     }
 
-    section:nth-child(2), section:nth-child(3){
+    .categories{
         padding: 2em 5em;
     }
 
-    section:nth-child(2) span, section:nth-child(3) span{
+    .categories span{
         font-size: 0.7em;
     }
 
-    section:nth-child(2) p, section:nth-child(3) p{
+    .categories span + p{
         font-size: 1.5em;
-    }
-
-    section:nth-child(2) a, section:nth-child(3) a{
-        width: 15em;
-        height: 15em;
-    }
-
-    section:nth-child(2) a:hover, section:nth-child(3) a:hover{
-        top: 0;
     }
 
     footer p:nth-child(1){
@@ -328,4 +380,73 @@ nav label{
         color: #7a7a7a;
         font-size: 0.7em;
     }
+
+    /* accueil */
+
+    .accueil .categories a{
+        width: 15em;
+        height: 15em;
+    }
+
+    .accueil .categories a:hover{
+        top: 0;
+    }
+
+    /* accueil */
+
+
+    /* support */
+
+    .support .hero p{
+        padding: 1em 0.1em;
+    }
+
+    .support .categories{
+        padding: 2em 3em;
+    }
+
+    .support .categories:nth-child(2) div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    details{
+        padding: 0.5em 1em;
+        margin: 1em 0;
+    }
+
+    summary{
+        font-size: 1em;
+    }
+
+    details p{
+        font-size: 0.9em;
+    }
+
+    .support .categories:nth-child(3) div{
+        padding: 0;
+    }
+
+    .support .categories:nth-child(3) div div p:first-of-type{
+        font-size: 1em;
+    }
+
+    .support .categories:nth-child(3) div div p:last-of-type{
+        font-size: 0.8em;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    form label{
+        font-size: 0.9em;
+    }
+
+    .bouton button{
+        font-size: 0.6em;
+    }
+
+    /* support */
 }

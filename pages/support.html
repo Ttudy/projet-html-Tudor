@@ -100,8 +100,36 @@
       <p>Contactez-nous</p>
       <p class="email"><span>Ou par e-mail :</span> <span>support@katananosekai.fr</span></p>
 
-      <form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="faccaf28-0aa8-4a82-8bd0-b55b4bbe4e7a">
+        <div class="informations">
+          <label>Nom
+            <input type="text" name="nom" autocomplete="name" required>
+          </label>
 
+          <label>Adresse email
+            <input type="email" name="email" required>
+          </label>
+        </div>
+
+        <label>Sujet
+          <select required>
+            <option value="">Choisir un sujet</option>
+            <option>Suivi de commande</option>
+            <option>Livraison</option>
+            <option>Retour ou remboursement</option>
+            <option>Question sur un produit</option>
+            <option>Autre</option>
+          </select>
+        </label>
+
+        <label>Message
+          <textarea name="message" required></textarea>
+        </label>
+
+        <div class="bouton">
+          <button type="submit">ENVOYER LE MESSAGE</button>
+        </div>
       </form>
     </section>
   </main>
