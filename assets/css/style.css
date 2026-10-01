@@ -32,63 +32,28 @@ span{
     padding-right: 2em;
 }
 
-.hero{
-    display: flex;
-    align-items: center;
-    background-image: url('../images/fond/fond_accueil.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 40em;
-}
-
 .hero div {
     padding-left: 7em;
     display: flex;
     flex-direction: column;
 }
 
-section:nth-child(2), section:nth-child(3){
+.categories{
     padding: 5em;
     text-align: center;
 }
 
-section:nth-child(2) span, section:nth-child(3) span{
+.categories span{
     font-weight: 650;
     font-size: 0.9em;
     letter-spacing: 0.1em;
 }
 
-section:nth-child(2) p, section:nth-child(3) p{
+.categories span + p{
     margin-top: 0.1em;
     margin-bottom: 1.2em;
     font-size: 2.4em;
     font-weight: bold;
-}
-
-section:nth-child(2) div, section:nth-child(3) div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1.95em;
-}
-
-section:nth-child(2) a, section:nth-child(3) a{
-    width: 19em;
-    height: 19em;
-}
-
-section:nth-child(2) a:hover, section:nth-child(3) a:hover{
-    position: relative;
-    top: -0.3em;
-}
-
-section:nth-child(2){
-    background-color: #111111;
-}
-
-section:nth-child(3){
-    background-color: #171717;
 }
 
 footer{
@@ -111,6 +76,12 @@ h1{
     padding-top: 0.2em;
     font-size: 4.5em;
     line-height: 1em;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 40em;
 }
 
 .hero a{
@@ -141,6 +112,132 @@ nav label{
     font-size: 1.5em;
 }
 
+/* accueil */
+
+.accueil .hero{
+    background-image: url('../images/fond/fond_accueil.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.accueil .categories div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.95em;
+}
+
+.accueil .categories a{
+    width: 19em;
+    height: 19em;
+}
+
+.accueil .categories a:hover{
+    position: relative;
+    top: -0.3em;
+}
+
+.accueil .categories:nth-child(2){
+    background-color: #111111;
+}
+
+.accueil .categories:nth-child(3){
+    background-color: #171717;
+}
+
+/* accueil */
+
+/* support */
+    .support .hero{
+        background: radial-gradient(circle at 50% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
+    }
+
+    .support .categories:nth-child(2){
+        background-color: #161616;
+    }
+
+    .support .categories:nth-child(3){
+        background-color: #111111;
+    }
+
+    .support .categories:nth-child(4){
+        background-color: #161616;
+    }
+
+    details{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background-color: #242424;
+        margin: 1em 4em;
+        padding: 1.2em 3em;
+
+    }
+
+    summary{
+        font-size: 1.6em;
+        font-weight: 550;
+        list-style: none;
+    }
+
+    details p{
+        font-size: 1.5em;
+        color: #a1a1a1;
+        padding-top: 1em;
+    }
+
+    details:open{
+        border-left: 0.2em solid #ff3247;
+    }
+
+    .support .categories:nth-child(3) div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: left;
+        gap: 1.2em;
+        padding: 0 4em
+    }
+
+    .support .categories:nth-child(3) div div{
+        display: block;
+        width: 27em;
+        border-top: 0.2em solid #ff3247;
+        padding: 0 2em;
+        background-color: #242424;
+    }
+
+    .support .categories:nth-child(3) div div p:first-of-type{
+        padding-top: 1.5em;
+        padding-bottom: 1em;
+        font-size: 1.6em;
+        font-weight: 550;
+    }
+
+    .support .categories:nth-child(3) div div p:last-of-type{
+        color: #a1a1a1;
+        font-size: 1.4em;
+        font-weight: 550;
+        padding-bottom: 2.2em;
+    }
+
+    .email span{
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 0;
+    }
+
+    .email span:first-of-type{
+        color: #a1a1a1;
+    }
+
+    .email span:last-of-type{
+        color: #fff;
+    }
+
+/* support */
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .menu{
         display: none;
@@ -151,15 +248,15 @@ nav label{
     }
 
     #toggle:checked + .menu {
-        font-size: 0.7em;
+        font-size: 1em;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center;
-        gap: 0.2em;
+        gap: 0.8em;
         position: absolute;
         top: 100%;
-        right: 0;
+        left: 0;
+        width: 100%;
         padding: 0.2em 1em;
         background: #111;
     }
