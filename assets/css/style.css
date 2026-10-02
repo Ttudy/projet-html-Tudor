@@ -107,9 +107,27 @@ h1{
     padding: 1em 0;
 }
 
-nav label{
+nav label[for="menu_mobile"]{
     display: none;
     font-size: 1.5em;
+}
+
+nav label[for="menu_katanas"]{
+    cursor: pointer;
+}
+
+.animes{
+    display: none;
+}
+
+#menu_katanas:checked + .animes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    position: absolute;
+    top: 100%;
+    padding: 1em;
+    background: #111;
 }
 
 /* accueil */
@@ -197,7 +215,7 @@ nav label{
         justify-content: center;
         text-align: left;
         gap: 1.2em;
-        padding: 0 4em
+        padding: 0 0.8em
     }
 
     .support .categories:nth-child(3) div div{
@@ -303,11 +321,11 @@ nav label{
         display: none;
     }
 
-    nav label{
+    nav label[for="menu_mobile"]{
         display: flex;
     }
 
-    #toggle:checked + .menu {
+    #menu_mobile:checked + .menu {
         font-size: 1em;
         display: flex;
         flex-wrap: wrap;
@@ -319,6 +337,12 @@ nav label{
         width: 100%;
         padding-left: 1em;
         padding-bottom: 1em;
+        background: #111;
+    }
+
+    #menu_katanas:checked + .animes{
+        position: relative;
+        padding: 0 0 1em;
         background: #111;
     }
 
