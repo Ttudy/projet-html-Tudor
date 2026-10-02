@@ -26,7 +26,7 @@ span{
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2em;
     font-size: 1em;
     padding-right: 2em;
@@ -316,6 +316,19 @@ nav label[for="menu_katanas"]{
     }
 /* support */
 
+/* demon slayer */
+
+.demon_slayer .hero{
+    background: radial-gradient(circle at 0% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
+}
+
+.demon_slayer section:nth-child(2){
+    border-top: 0.2em solid #ff3247;
+    background-color: #1a1a1d;
+}
+
+/* demon slayer */
+
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .menu{
         display: none;
@@ -343,7 +356,6 @@ nav label[for="menu_katanas"]{
     #menu_katanas:checked + .animes{
         position: relative;
         padding: 0 0 1em;
-        background: #111;
     }
 
     .topbar{
