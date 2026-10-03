@@ -546,35 +546,5 @@ form textarea{
 
     /* support */
 
-    /* demon slayer */
 
-    .demon_slayer section{
-        padding: 2em 0.5em;
-    }
-
-    .demon_slayer .carte{
-        width: 100%;
-    }
-
-    .demon_slayer .carte:hover{
-        top: 0;
-    }
-
-    .demon_slayer .infos h2{
-        font-size: 0.8em;
-    }
-
-    .demon_slayer .infos h2 + p{
-        font-size: 0.6em;
-    }
-
-    .demon_slayer .prix p{
-        font-size: 1em;
-    }
-
-    .demon_slayer .prix a {
-        font-size: 0.6em;
-    }
-
-    /* demon slayer */
 }
