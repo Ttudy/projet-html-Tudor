@@ -167,153 +167,155 @@ nav label[for="menu_katanas"]{
 /* accueil */
 
 /* support */
-    .support .hero{
-        background: radial-gradient(circle at 50% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
-    }
 
-    .support .categories:nth-child(2){
-        background-color: #161616;
-    }
+.support .hero{
+    background: radial-gradient(circle at 50% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
+}
 
-    .support .categories:nth-child(3){
-        background-color: #111111;
-    }
+.support .categories:nth-child(2){
+    background-color: #161616;
+}
 
-    .support .categories:nth-child(4){
-        background-color: #161616;
-    }
+.support .categories:nth-child(3){
+    background-color: #111111;
+}
 
-    details{
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        background-color: #242424;
-        margin: 1em 4em;
-        padding: 1.2em 3em;
+.support .categories:nth-child(4){
+    background-color: #161616;
+}
 
-    }
+details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #242424;
+    margin: 1em 4em;
+    padding: 1.2em 3em;
 
-    summary{
-        font-size: 1.6em;
-        font-weight: 550;
-        list-style: none;
-    }
+}
 
-    details p{
-        font-size: 1.5em;
-        color: #a1a1a1;
-        padding-top: 1em;
-    }
+summary{
+    font-size: 1.6em;
+    font-weight: 550;
+    list-style: none;
+}
 
-    details:open{
-        border-left: 0.2em solid #ff3247;
-    }
+details p{
+    font-size: 1.5em;
+    color: #a1a1a1;
+    padding-top: 1em;
+}
 
-    .support .categories:nth-child(3) div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: left;
-        gap: 1.2em;
-        padding: 0 0.8em
-    }
+details:open{
+    border-left: 0.2em solid #ff3247;
+}
 
-    .support .categories:nth-child(3) div div{
-        display: block;
-        width: 27em;
-        border-top: 0.2em solid #ff3247;
-        padding: 0 2em;
-        background-color: #242424;
-    }
+.support .categories:nth-child(3) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 1.2em;
+    padding: 0 0.8em
+}
 
-    .support .categories:nth-child(3) div div p:first-of-type{
-        padding-top: 1.5em;
-        padding-bottom: 1em;
-        font-size: 1.6em;
-        font-weight: 550;
-    }
+.support .categories:nth-child(3) div div{
+    display: block;
+    width: 27em;
+    border-top: 0.2em solid #ff3247;
+    padding: 0 2em;
+    background-color: #242424;
+}
 
-    .support .categories:nth-child(3) div div p:last-of-type{
-        color: #a1a1a1;
-        font-size: 1.4em;
-        font-weight: 550;
-        padding-bottom: 2.2em;
-    }
+.support .categories:nth-child(3) div div p:first-of-type{
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1.6em;
+    font-weight: 550;
+}
 
-    .email{
-        padding-bottom: 5em;
-    }
+.support .categories:nth-child(3) div div p:last-of-type{
+    color: #a1a1a1;
+    font-size: 1.4em;
+    font-weight: 550;
+    padding-bottom: 2.2em;
+}
 
-    .email span{
-        font-size: 1.5em;
-        font-weight: 600;
-        letter-spacing: 0;
-    }
+.email{
+    padding-bottom: 5em;
+}
 
-    .email span:first-of-type{
-        color: #a1a1a1;
-    }
+.email span{
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0;
+}
 
-    .email span:last-of-type{
-        color: #fff;
-    }
+.email span:first-of-type{
+    color: #a1a1a1;
+}
 
-    form {
-        display: flex;
-        justify-content: center;
-        text-align: left;
-        flex-direction: column;
-        padding: 0 5em;
-    }
+.email span:last-of-type{
+    color: #fff;
+}
 
-    form label{
-        font-size: 1.5em;
-        color: #a1a1a1;
-    }
+form {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 0 5em;
+}
 
-    form input, select, textarea{
-        font-family: Arial, sans-serif;
-        outline: none;
-        font-size: 1em;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        padding: 1em;
-        border: 0.1em solid #3f3f3f;
-        background-color: #242424;
-        color: #fff;
-        width: 100%;
-    }
+form label{
+    font-size: 1.5em;
+    color: #a1a1a1;
+}
 
-    form input:focus, select:focus, textarea:focus{
-        border-color: #ff3247;
-    }
+form input, select, textarea{
+    font-family: Arial, sans-serif;
+    outline: none;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 0.1em solid #3f3f3f;
+    background-color: #242424;
+    color: #fff;
+    width: 100%;
+}
 
-    form textarea{
-        height: 12em;
-    }
+form input:focus, select:focus, textarea:focus{
+    border-color: #ff3247;
+}
 
-    .informations{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5em;
-        align-items: center;
-    }
+form textarea{
+    height: 12em;
+}
 
-    .informations label{
-        flex: 1;
-    }
+.informations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+}
 
-    .bouton{
-        display: flex;
-        justify-content: center;
-    }
+.informations label{
+    flex: 1;
+}
 
-    .bouton button{
-        padding: 1em 1.5em;
-        font-size: 1.2em;
-        color: #fff;
-        border: none;
-    }
+.bouton{
+    display: flex;
+    justify-content: center;
+}
+
+.bouton button{
+    padding: 1em 1.5em;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+}
+
 /* support */
 
 /* demon slayer */
@@ -322,9 +324,67 @@ nav label[for="menu_katanas"]{
     background: radial-gradient(circle at 0% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
 }
 
-.demon_slayer section:nth-child(2){
+.demon_slayer .categories:nth-child(2){
     border-top: 0.2em solid #ff3247;
     background-color: #1a1a1d;
+}
+
+.demon_slayer .produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+.demon_slayer .carte{
+    display: flex;
+    flex-direction: column;
+    width: 18.8em;
+    background-color: #25252a;
+}
+
+.demon_slayer .carte:hover{
+    position: relative;
+    top: -0.3em;
+}
+
+.demon_slayer .infos{
+    padding: 1em;
+}
+
+.demon_slayer .infos h2{
+    font-size: 1em;
+}
+
+.demon_slayer .infos h2 + p{
+    color: #a1a1a1;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+
+.demon_slayer .prix{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.demon_slayer .prix p{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.demon_slayer .prix a{
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    background-color: #c1121f;
+}
+
+
+.demon_slayer .prix a:hover{
+    background-color: #b1101b;
 }
 
 /* demon slayer */
@@ -485,4 +545,36 @@ nav label[for="menu_katanas"]{
     }
 
     /* support */
+
+    /* demon slayer */
+
+    .demon_slayer section{
+        padding: 2em 0.5em;
+    }
+
+    .demon_slayer .carte{
+        width: 100%;
+    }
+
+    .demon_slayer .carte:hover{
+        top: 0;
+    }
+
+    .demon_slayer .infos h2{
+        font-size: 0.8em;
+    }
+
+    .demon_slayer .infos h2 + p{
+        font-size: 0.6em;
+    }
+
+    .demon_slayer .prix p{
+        font-size: 1em;
+    }
+
+    .demon_slayer .prix a {
+        font-size: 0.6em;
+    }
+
+    /* demon slayer */
 }
