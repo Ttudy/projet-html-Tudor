@@ -38,18 +38,18 @@ span{
     flex-direction: column;
 }
 
-.categories{
+.sections{
     padding: 5em;
     text-align: center;
 }
 
-.categories span{
+.sections span{
     font-weight: 650;
     font-size: 0.9em;
     letter-spacing: 0.1em;
 }
 
-.categories span + p{
+.sections span + p{
     margin-top: 0.1em;
     margin-bottom: 1.2em;
     font-size: 2.4em;
@@ -103,7 +103,6 @@ h1{
 
 .hero p{
     color: #ccc;
-    width: 38em;
     padding: 1em 0;
 }
 
@@ -120,6 +119,10 @@ nav label[for="menu_katanas"]{
     display: none;
 }
 
+.animes a:first-of-type{
+    font-weight: bold;
+}
+
 #menu_katanas:checked + .animes{
     display: flex;
     flex-direction: column;
@@ -128,6 +131,64 @@ nav label[for="menu_katanas"]{
     top: 100%;
     padding: 1em;
     background: #111;
+}
+
+.produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    width: 18.8em;
+    background-color: #25252a;
+}
+
+.carte:hover{
+    position: relative;
+    top: -0.3em;
+}
+
+.infos{
+    padding: 1em;
+}
+
+.infos h2{
+    font-size: 1em;
+}
+
+.infos h2 + p{
+    color: #a1a1a1;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+
+.prix{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.prix p{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.prix a{
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    background-color: #c1121f;
+}
+
+
+.prix a:hover{
+    background-color: #b1101b;
 }
 
 /* accueil */
@@ -139,28 +200,28 @@ nav label[for="menu_katanas"]{
     background-repeat: no-repeat;
 }
 
-.accueil .categories div{
+.accueil .sections div{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.95em;
 }
 
-.accueil .categories a{
+.accueil .sections a{
     width: 19em;
     height: 19em;
 }
 
-.accueil .categories a:hover{
+.accueil .sections a:hover{
     position: relative;
     top: -0.3em;
 }
 
-.accueil .categories:nth-child(2){
+.accueil .sections:nth-child(2){
     background-color: #111111;
 }
 
-.accueil .categories:nth-child(3){
+.accueil .sections:nth-child(3){
     background-color: #171717;
 }
 
@@ -172,15 +233,15 @@ nav label[for="menu_katanas"]{
     background: radial-gradient(circle at 50% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
 }
 
-.support .categories:nth-child(2){
+.support .sections:nth-child(2){
     background-color: #161616;
 }
 
-.support .categories:nth-child(3){
+.support .sections:nth-child(3){
     background-color: #111111;
 }
 
-.support .categories:nth-child(4){
+.support .sections:nth-child(4){
     background-color: #161616;
 }
 
@@ -210,7 +271,7 @@ details:open{
     border-left: 0.2em solid #ff3247;
 }
 
-.support .categories:nth-child(3) div{
+.support .sections:nth-child(3) div{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -219,7 +280,7 @@ details:open{
     padding: 0 0.8em
 }
 
-.support .categories:nth-child(3) div div{
+.support .sections:nth-child(3) div div{
     display: block;
     width: 27em;
     border-top: 0.2em solid #ff3247;
@@ -227,14 +288,14 @@ details:open{
     background-color: #242424;
 }
 
-.support .categories:nth-child(3) div div p:first-of-type{
+.support .sections:nth-child(3) div div p:first-of-type{
     padding-top: 1.5em;
     padding-bottom: 1em;
     font-size: 1.6em;
     font-weight: 550;
 }
 
-.support .categories:nth-child(3) div div p:last-of-type{
+.support .sections:nth-child(3) div div p:last-of-type{
     color: #a1a1a1;
     font-size: 1.4em;
     font-weight: 550;
@@ -318,76 +379,144 @@ form textarea{
 
 /* support */
 
-/* demon slayer */
+/* categories */
 
-.demon_slayer .hero{
+.categories .hero{
     background: radial-gradient(circle at 0% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
 }
 
-.demon_slayer .categories:nth-child(2){
+.categories .sections:nth-child(2){
     border-top: 0.2em solid #ff3247;
     background-color: #1a1a1d;
 }
 
-.demon_slayer .produits{
+/* categories */
+
+/* produits */
+
+.katanas .sections:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d;
+    text-align: left;
+    padding: 5em 0;
+}
+
+.produit{
+    gap: 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
-    text-align: left;
-    padding: 1em;
+    padding-bottom: 3em;
 }
 
-.demon_slayer .carte{
+.galerie{
+    width: 35em;
     display: flex;
-    flex-direction: column;
-    width: 18.8em;
-    background-color: #25252a;
+    flex-wrap: wrap;
+    gap: 0.7em;
 }
 
-.demon_slayer .carte:hover{
-    position: relative;
-    top: -0.3em;
+.galerie img:nth-child(1) {
+    width: 35em;
+    height: 35em;
 }
 
-.demon_slayer .infos{
-    padding: 1em;
+.galerie img:nth-child(2), .galerie img:nth-child(3){
+    width: 17.15em;
+    height: 17.15em;
 }
 
-.demon_slayer .infos h2{
-    font-size: 1em;
+.achat{
+    padding: 1.5em;
+    border-top: 0.2em solid #ff3247;
+    background-color: #242424;
 }
 
-.demon_slayer .infos h2 + p{
-    color: #a1a1a1;
-    font-size: 0.8em;
-    padding-top: 0.2em;
+.achat p:first-of-type{
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+}
+
+.achat p:nth-child(2){
+    color: #00b300;
     padding-bottom: 1em;
+    border-bottom: 0.05em solid #3c3c3c;
 }
 
-.demon_slayer .prix{
+.achat ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
+
+.achat ul, .achat p:last-of-type{
+    color: #a1a1a1;
+    font-size: 0.95em;
+}
+
+.achat p:last-of-type{
+    padding-top: 1em;
+}
+
+.achat ul + a{
     display: flex;
-    justify-content: space-between;
-    align-items:  center;
-}
-
-.demon_slayer .prix p{
-    font-weight: 600;
-    font-size: 1.2em;
-}
-
-.demon_slayer .prix a{
-    font-size: 0.8em;
-    padding: 0.5em 1em;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.7em 0;
     background-color: #c1121f;
 }
 
-
-.demon_slayer .prix a:hover{
+.achat ul + a:hover{
     background-color: #b1101b;
 }
 
-/* demon slayer */
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.description{
+    width: 35em;
+}
+
+.details h2{
+    padding-bottom: 0.7em;
+}
+
+.description p{
+    color: #a1a1a1;
+    padding-bottom: 1em;
+}
+
+.caracteristiques div, .caracteristiques h2{
+    border-bottom: 0.05em solid #3c3c3c;
+}
+
+.caracteristiques div{
+    display: flex;
+    gap: 15em;
+    justify-content: space-between;
+}
+
+.caracteristiques p{
+    padding: 0.8em 0;
+}
+
+.caracteristiques p:first-of-type{
+    color: #a1a1a1;
+}
+
+.recommandations{
+    padding-bottom: 1.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+/* produits */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .menu{
@@ -450,19 +579,23 @@ form textarea{
         width: 94%;
     }
 
+    .hero p br{
+        display: none;
+    }
+
     .hero a{
         font-size: 0.8em;
     }
 
-    .categories{
+    .sections{
         padding: 2em 5em;
     }
 
-    .categories span{
+    .sections span{
         font-size: 0.7em;
     }
 
-    .categories span + p{
+    .sections span + p{
         font-size: 1.5em;
     }
 
@@ -479,12 +612,12 @@ form textarea{
 
     /* accueil */
 
-    .accueil .categories a{
+    .accueil .sections a{
         width: 15em;
         height: 15em;
     }
 
-    .accueil .categories a:hover{
+    .accueil .sections a:hover{
         top: 0;
     }
 
@@ -493,15 +626,11 @@ form textarea{
 
     /* support */
 
-    .support .hero p{
-        padding: 1em 0.1em;
-    }
-
-    .support .categories{
+    .support .sections{
         padding: 2em 3em;
     }
 
-    .support .categories:nth-child(2) div{
+    .support .sections:nth-child(2) div{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -520,15 +649,15 @@ form textarea{
         font-size: 0.9em;
     }
 
-    .support .categories:nth-child(3) div{
+    .support .sections:nth-child(3) div{
         padding: 0;
     }
 
-    .support .categories:nth-child(3) div div p:first-of-type{
+    .support .sections:nth-child(3) div div p:first-of-type{
         font-size: 1em;
     }
 
-    .support .categories:nth-child(3) div div p:last-of-type{
+    .support .sections:nth-child(3) div div p:last-of-type{
         font-size: 0.8em;
     }
 
@@ -546,20 +675,99 @@ form textarea{
 
     /* support */
 
-    /* demon slayer */
+    /* categories */
 
-    .demon_slayer section{
+    .categories section{
         padding: 2em 0.5em;
     }
 
-    .demon_slayer .carte{
+    .categories .carte{
         width: 100%;
     }
 
-    .demon_slayer .carte:hover{
+    .categories .carte:hover{
         top: 0;
     }
 
-    /* demon slayer */
+    /* categories */
+
+    /* produits */
+
+    .katanas .sections:nth-child(1){
+        padding: 2em 0;
+    }
+
+    .galerie{
+        width: 22em;
+        gap: 0.5em;
+    }
+
+    .galerie img:nth-child(1){
+        width: 22em;
+        height: 22em;
+    }
+
+    .galerie img:nth-child(2), .galerie img:nth-child(3){
+        width: 10.75em;
+        height: 10.75em;
+    }
+
+    .produit span{
+        font-size: 0.8em;
+    }
+
+    .produit span + p{
+        font-size: 1.1em;
+    }
+
+    .achat p:first-of-type{
+        font-size: 1.3em;
+    }
+
+    .achat p:nth-child(2){
+        font-size: 0.7em;
+    }
+
+    .achat ul, .achat p:last-of-type{
+        font-size: 0.8em;
+    }
+
+    .achat ul + a{
+        font-size: 0.9em;
+    }
+
+    .details{
+        gap: 1em;
+    }
+
+    .description{
+        width: 21em;
+    }
+
+    .details h2{
+        font-size: 1.2em;
+    }
+
+    .details p{
+        font-size: 0.8em;
+    }
+
+    .caracteristiques{
+        width: 21em;
+    }
+
+    .caracteristiques div{
+        gap: 0;
+    }
+
+    .recommandations{
+        font-size: 1.2em;
+    }
+
+    .katanas .sections:nth-child(2){
+        padding: 2em 0;
+    }
+
+    /* produits */
 
 }
