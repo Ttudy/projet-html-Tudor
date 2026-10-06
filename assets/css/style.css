@@ -410,6 +410,10 @@ form textarea{
     padding-bottom: 3em;
 }
 
+.produit div:last-child{
+    width: 32.2em;
+}
+
 .galerie{
     width: 35em;
     display: flex;
@@ -517,6 +521,91 @@ form textarea{
 }
 
 /* produits */
+
+/* banque */
+
+.banque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.infos_bancaires{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #fff;
+    color: black;
+    overflow: hidden;
+    margin: 0 1em;
+}
+
+.message_banque{
+    padding: 1em;
+    background-color: #006b4f;
+    color: #fff;
+}
+
+.problème{
+    padding: 1em;
+    margin: 1em;
+    background-color: #f8f1f2;
+}
+
+.problème p:first-of-type{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.problème p:last-of-type{
+    font-size: 0.9em;
+}
+
+.solde{
+    padding: 1em;
+    margin: 1em;
+    background-color: #fafcfb;
+}
+
+.solde div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.solde div p, .solde p:last-of-type{
+    font-size: 0.8em;
+    color: #014220;
+}
+
+.solde div + p{
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.solution{
+    padding: 1em;
+    margin: 1em;
+    background-color: #f0f7f4;
+}
+
+.solution p:first-of-type, .solution a{
+    font-weight: bold;
+}
+
+.solution p:nth-child(2){
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    max-width: 33em;
+}
+
+.solution a{
+    color: #006c35;
+}
+
+/* banque */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .menu{
@@ -712,6 +801,10 @@ form textarea{
         height: 10.75em;
     }
 
+    .produit div:last-child{
+        width: fit-content;
+    }
+
     .produit span{
         font-size: 0.8em;
     }
@@ -769,5 +862,29 @@ form textarea{
     }
 
     /* produits */
+
+    /* catalogue */
+
+    .catalogue .carte{
+        width: 10em;
+    }
+
+    .catalogue .infos h2{
+        font-size: 0.7em;
+    }
+
+    .catalogue .infos h2 + p{
+        font-size: 0.5em;
+    }
+
+    .catalogue .prix p{
+        font-size: 0.9em;
+    }
+
+    .catalogue .prix a{
+        font-size: 0.5em;
+    }
+
+    /* catalogue */
 
 }
