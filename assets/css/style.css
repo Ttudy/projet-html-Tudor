@@ -538,7 +538,7 @@ form textarea{
     background-color: #fff;
     color: black;
     overflow: hidden;
-    margin: 0 1em;
+    margin: 2em 1em;
 }
 
 .message_banque{
@@ -606,6 +606,65 @@ form textarea{
 }
 
 /* banque */
+
+/* liste_anime */
+
+.recommandations_banque{
+    background-color: #f3f5f4;
+    display: flex;
+    justify-content: center;
+}
+
+.recommandations_banque a{
+    padding: 1em;
+    font-weight: bold;
+    background-color: #fff;
+    color: #0f2e00;
+    width: 48%;
+    text-decoration: underline;
+    border: solid 0.05em #8a8a8a;
+    border-radius: 0.2em;
+}
+
+.recommandations_banque a:hover{
+    border: solid 0.1em #205500;
+    background-color: #f8f8f8;
+}
+
+.recommandations_banque .liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60em;
+    margin: 2em;
+}
+
+.recommandations_banque div div:first-of-type{
+    background-color: #fff;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    border-left: solid 0.3em #006b4f;
+}
+
+.recommandations_banque div div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.recommandations_banque div div:first-of-type p:first-of-type{
+    color: #006b4f;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.recommandations_banque div div:first-of-type p:last-of-type{
+    color: #595959;
+    font-size: 0.9em;
+}
+
+/* liste_anime */
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     .menu{
@@ -887,4 +946,15 @@ form textarea{
 
     /* catalogue */
 
+    /* liste_anime */
+
+    .recommandations_banque a{
+        width: 100%;
+    }
+
+    .recommandations_banque .liste{
+        margin: 1.5em 1em;
+    }
+
+    /* liste_anime */
 }
