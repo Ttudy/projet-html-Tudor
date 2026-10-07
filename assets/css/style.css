@@ -194,7 +194,7 @@ nav label[for="menu_katanas"]{
 /* accueil */
 
 .accueil .hero{
-    background-image: url('../images/fond/fond_accueil.png');
+    background-image: url('../images/fond/fond_accueil.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
