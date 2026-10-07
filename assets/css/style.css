@@ -609,8 +609,11 @@ form textarea{
 
 /* liste_anime */
 
-.recommandations_banque{
+.liste_animes{
     background-color: #f3f5f4;
+}
+
+.recommandations_banque{
     display: flex;
     justify-content: center;
 }
