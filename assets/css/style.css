@@ -1,0 +1,989 @@
+body{
+    font-family: "Arial", sans-serif;
+    color: #fff;
+    background: #111;
+}
+
+.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+span{
+    color: #ff3247;
+}
+
+.topbar{
+    width: 100%;
+    padding: 1.2em 5em 1.2em 7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    position: relative;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1em;
+    padding-right: 2em;
+}
+
+.hero div {
+    padding-left: 7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.sections{
+    padding: 5em;
+    text-align: center;
+}
+
+.sections span{
+    font-weight: 650;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+}
+
+.sections span + p{
+    margin-top: 0.1em;
+    margin-bottom: 1.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #070707;
+    text-align: center;
+    padding: 2.2em;
+}
+
+footer p:nth-child(1){
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+footer p:nth-child(2){
+    color: #7a7a7a;
+}
+
+h1{
+    padding-top: 0.2em;
+    font-size: 4.5em;
+    line-height: 1em;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: 40em;
+}
+
+.hero a, button{
+    margin-top: 1em;
+    width: fit-content;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    background-color: #c1121f;
+}
+
+.hero a:hover, button:hover{
+    background-color: #b1101b;
+}
+
+.hero span{
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.hero p{
+    color: #ccc;
+    padding: 1em 0;
+}
+
+nav label[for="menu_mobile"]{
+    display: none;
+    font-size: 1.5em;
+}
+
+nav label[for="menu_katanas"]{
+    cursor: pointer;
+}
+
+.animes{
+    display: none;
+}
+
+.animes a:first-of-type{
+    font-weight: bold;
+}
+
+#menu_katanas:checked + .animes{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    position: absolute;
+    top: 100%;
+    padding: 1em;
+    background: #111;
+}
+
+.produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    text-align: left;
+    padding: 1em;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    width: 18.8em;
+    background-color: #25252a;
+}
+
+.carte:hover{
+    position: relative;
+    top: -0.3em;
+}
+
+.infos{
+    padding: 1em;
+}
+
+.infos h2{
+    font-size: 1em;
+}
+
+.infos h2 + p{
+    color: #a1a1a1;
+    font-size: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 1em;
+}
+
+.prix{
+    display: flex;
+    justify-content: space-between;
+    align-items:  center;
+}
+
+.prix p{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.prix a{
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+    background-color: #c1121f;
+}
+
+
+.prix a:hover{
+    background-color: #b1101b;
+}
+
+/* accueil */
+
+.accueil .hero{
+    background-image: url('../images/fond/fond_accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.accueil .sections div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.95em;
+}
+
+.accueil .sections a{
+    width: 19em;
+    height: 19em;
+}
+
+.accueil .sections a:hover{
+    position: relative;
+    top: -0.3em;
+}
+
+.accueil .sections:nth-child(2){
+    background-color: #111111;
+}
+
+.accueil .sections:nth-child(3){
+    background-color: #171717;
+}
+
+/* accueil */
+
+/* support */
+
+.support .hero{
+    background: radial-gradient(circle at 50% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
+}
+
+.support .sections:nth-child(2){
+    background-color: #161616;
+}
+
+.support .sections:nth-child(3){
+    background-color: #111111;
+}
+
+.support .sections:nth-child(4){
+    background-color: #161616;
+}
+
+details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #242424;
+    margin: 1em 4em;
+    padding: 1.2em 3em;
+
+}
+
+summary{
+    font-size: 1.6em;
+    font-weight: 550;
+    list-style: none;
+}
+
+details p{
+    font-size: 1.5em;
+    color: #a1a1a1;
+    padding-top: 1em;
+}
+
+details:open{
+    border-left: 0.2em solid #ff3247;
+}
+
+.support .sections:nth-child(3) div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    gap: 1.2em;
+    padding: 0 0.8em
+}
+
+.support .sections:nth-child(3) div div{
+    display: block;
+    width: 27em;
+    border-top: 0.2em solid #ff3247;
+    padding: 0 2em;
+    background-color: #242424;
+}
+
+.support .sections:nth-child(3) div div p:first-of-type{
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    font-size: 1.6em;
+    font-weight: 550;
+}
+
+.support .sections:nth-child(3) div div p:last-of-type{
+    color: #a1a1a1;
+    font-size: 1.4em;
+    font-weight: 550;
+    padding-bottom: 2.2em;
+}
+
+.email{
+    padding-bottom: 5em;
+}
+
+.email span{
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.email span:first-of-type{
+    color: #a1a1a1;
+}
+
+.email span:last-of-type{
+    color: #fff;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    padding: 0 5em;
+}
+
+form label{
+    font-size: 1.5em;
+    color: #a1a1a1;
+}
+
+form input, select, textarea{
+    font-family: Arial, sans-serif;
+    outline: none;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 0.1em solid #3f3f3f;
+    background-color: #242424;
+    color: #fff;
+    width: 100%;
+}
+
+form input:focus, select:focus, textarea:focus{
+    border-color: #ff3247;
+}
+
+form textarea{
+    height: 12em;
+}
+
+.informations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.informations label{
+    flex: 1;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+}
+
+.bouton button{
+    padding: 1em 1.5em;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+}
+
+/* support */
+
+/* categories */
+
+.categories .hero{
+    background: radial-gradient(circle at 0% 0%, rgba(224, 24, 45, 0.25), transparent 65%), #111;
+}
+
+.categories .sections:nth-child(2){
+    border-top: 0.2em solid #ff3247;
+    background-color: #1a1a1d;
+}
+
+/* categories */
+
+/* produits */
+
+.katanas .sections:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1d;
+    text-align: left;
+    padding: 5em 0;
+}
+
+.produit{
+    gap: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+
+.produit span + h1{
+    margin-top: 0.1em;
+    margin-bottom: 1.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+.produit div:last-child{
+    width: 32.2em;
+}
+
+.galerie{
+    width: 35em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7em;
+}
+
+.galerie img:nth-child(1) {
+    width: 35em;
+    height: 35em;
+}
+
+.galerie img:nth-child(2), .galerie img:nth-child(3){
+    width: 17.15em;
+    height: 17.15em;
+}
+
+.achat{
+    padding: 1.5em;
+    border-top: 0.2em solid #ff3247;
+    background-color: #242424;
+}
+
+.achat p:first-of-type{
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 0.2em;
+}
+
+.achat p:nth-child(2){
+    color: #00b300;
+    padding-bottom: 1em;
+    border-bottom: 0.05em solid #3c3c3c;
+}
+
+.achat ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 2em;
+}
+
+.achat ul, .achat p:last-of-type{
+    color: #a1a1a1;
+    font-size: 0.95em;
+}
+
+.achat p:last-of-type{
+    padding-top: 1em;
+}
+
+.achat ul + a{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0.7em 0;
+    background-color: #c1121f;
+}
+
+.achat ul + a:hover{
+    background-color: #b1101b;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+}
+
+.description{
+    width: 35em;
+}
+
+.details h2{
+    padding-bottom: 0.7em;
+}
+
+.description p{
+    color: #a1a1a1;
+    padding-bottom: 1em;
+}
+
+.caracteristiques div, .caracteristiques h2{
+    border-bottom: 0.05em solid #3c3c3c;
+}
+
+.caracteristiques div{
+    display: flex;
+    gap: 15em;
+    justify-content: space-between;
+}
+
+.caracteristiques p{
+    padding: 0.8em 0;
+}
+
+.caracteristiques p:first-of-type{
+    color: #a1a1a1;
+}
+
+.recommandations{
+    padding-bottom: 1.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+/* produits */
+
+/* banque */
+
+.banque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.infos_bancaires{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    background-color: #fff;
+    color: black;
+    overflow: hidden;
+    margin: 2em 1em;
+}
+
+.message_banque{
+    padding: 1em;
+    background-color: #006b4f;
+    color: #fff;
+}
+
+.message_banque h1 {
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+.problème{
+    padding: 1em;
+    margin: 1em;
+    background-color: #f8f1f2;
+}
+
+.problème p:first-of-type{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.problème p:last-of-type{
+    font-size: 0.9em;
+}
+
+.solde{
+    padding: 1em;
+    margin: 1em;
+    background-color: #fafcfb;
+}
+
+.solde div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.solde div p, .solde p:last-of-type{
+    font-size: 0.8em;
+    color: #014220;
+}
+
+.solde div + p{
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.solution{
+    padding: 1em;
+    margin: 1em;
+    background-color: #f0f7f4;
+}
+
+.solution p:first-of-type, .solution a{
+    font-weight: bold;
+}
+
+.solution p:nth-child(2){
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    max-width: 33em;
+}
+
+.solution a{
+    color: #006c35;
+}
+
+/* banque */
+
+/* liste_anime */
+
+.liste_animes{
+    background-color: #f3f5f4;
+}
+
+.recommandations_banque{
+    display: flex;
+    justify-content: center;
+}
+
+.recommandations_banque a{
+    padding: 1em;
+    font-weight: bold;
+    background-color: #fff;
+    color: #0f2e00;
+    width: 48%;
+    text-decoration: underline;
+    border: solid 0.05em #8a8a8a;
+    border-radius: 0.2em;
+}
+
+.recommandations_banque a:hover{
+    border: solid 0.1em #205500;
+    background-color: #f8f8f8;
+}
+
+.recommandations_banque .liste{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60em;
+    margin: 2em;
+}
+
+.recommandations_banque div div:first-of-type{
+    background-color: #fff;
+    padding: 1em 1.5em;
+    margin-bottom: 1.5em;
+    border-left: solid 0.3em #006b4f;
+}
+
+.recommandations_banque div div:last-of-type{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.recommandations_banque div div:first-of-type h1{
+    line-height: 1.5;
+    padding: 0;
+    color: #006b4f;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.recommandations_banque div div:first-of-type p{
+    color: #595959;
+    font-size: 0.9em;
+}
+
+/* liste_anime */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    .menu{
+        display: none;
+    }
+
+    nav label[for="menu_mobile"]{
+        display: flex;
+    }
+
+    #menu_mobile:checked + .menu {
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0.8em;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        background: #111;
+    }
+
+    #menu_katanas:checked + .animes{
+        position: relative;
+        padding: 0 0 1em;
+    }
+
+    .topbar{
+        padding-left: 1em;
+        padding-right: 1em;
+        justify-content: space-between;
+    }
+    .logo{
+        font-size: 1em;
+    }
+
+    .hero{
+        height: 25em;
+        text-align: center;
+        justify-content: center;
+    }
+    .hero div{
+        align-items: center;
+        padding: 0;
+    }
+
+    .hero span{
+        font-size: 1em;
+    }
+
+    h1{
+        font-size: 2.3em;
+    }
+
+    .hero p{
+        font-size: 1em;
+        width: 94%;
+    }
+
+    .hero p br{
+        display: none;
+    }
+
+    .hero a{
+        font-size: 0.8em;
+    }
+
+    .sections{
+        padding: 2em 5em;
+    }
+
+    .sections span{
+        font-size: 0.7em;
+    }
+
+    .sections span + p{
+        font-size: 1.5em;
+    }
+
+    footer p:nth-child(1){
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 0.2em;
+    }
+
+    footer p:nth-child(2){
+        color: #7a7a7a;
+        font-size: 0.7em;
+    }
+
+    /* accueil */
+
+    .accueil .sections a{
+        width: 15em;
+        height: 15em;
+    }
+
+    .accueil .sections a:hover{
+        top: 0;
+    }
+
+    /* accueil */
+
+
+    /* support */
+
+    .support .sections{
+        padding: 2em 3em;
+    }
+
+    .support .sections:nth-child(2) div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    details{
+        padding: 0.5em 1em;
+        margin: 1em 0;
+    }
+
+    summary{
+        font-size: 1em;
+    }
+
+    details p{
+        font-size: 0.9em;
+    }
+
+    .support .sections:nth-child(3) div{
+        padding: 0;
+    }
+
+    .support .sections:nth-child(3) div div p:first-of-type{
+        font-size: 1em;
+    }
+
+    .support .sections:nth-child(3) div div p:last-of-type{
+        font-size: 0.8em;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    form label{
+        font-size: 0.9em;
+    }
+
+    .bouton button{
+        font-size: 0.6em;
+    }
+
+    /* support */
+
+    /* categories */
+
+    .categories section{
+        padding: 2em 0.5em;
+    }
+
+    .categories .carte{
+        width: 100%;
+    }
+
+    .categories .carte:hover{
+        top: 0;
+    }
+
+    /* categories */
+
+    /* produits */
+
+    .katanas .sections:nth-child(1){
+        padding: 2em 0;
+    }
+
+    .galerie{
+        width: 22em;
+        gap: 0.5em;
+    }
+
+    .galerie img:nth-child(1){
+        width: 22em;
+        height: 22em;
+    }
+
+    .galerie img:nth-child(2), .galerie img:nth-child(3){
+        width: 10.75em;
+        height: 10.75em;
+    }
+
+    .produit div:last-child{
+        width: fit-content;
+    }
+
+    .produit span{
+        font-size: 0.8em;
+    }
+
+    .produit span + h1{
+        font-size: 1.1em;
+    }
+
+    .achat p:first-of-type{
+        font-size: 1.3em;
+    }
+
+    .achat p:nth-child(2){
+        font-size: 0.7em;
+    }
+
+    .achat ul, .achat p:last-of-type{
+        font-size: 0.8em;
+    }
+
+    .achat ul + a{
+        font-size: 0.9em;
+    }
+
+    .details{
+        gap: 1em;
+    }
+
+    .description{
+        width: 21em;
+    }
+
+    .details h2{
+        font-size: 1.2em;
+    }
+
+    .details p{
+        font-size: 0.8em;
+    }
+
+    .caracteristiques{
+        width: 21em;
+    }
+
+    .caracteristiques div{
+        gap: 0;
+    }
+
+    .recommandations{
+        font-size: 1.2em;
+    }
+
+    .katanas .sections:nth-child(2){
+        padding: 2em 0;
+    }
+
+    /* produits */
+
+    /* catalogue */
+
+    .catalogue .produits{
+        padding: 1em 0.5em;
+    }
+
+    .catalogue .carte{
+        width: 10.5em;
+        height: fit-content;
+    }
+
+    .catalogue .infos{
+        padding: 0.7em 0.6em;
+    }
+
+    .catalogue .infos h2{
+        font-size: 0.7em;
+    }
+
+    .catalogue .infos h2 + p{
+        font-size: 0.5em;
+    }
+
+    .catalogue .prix p{
+        font-size: 0.9em;
+    }
+
+    .catalogue .prix a{
+        font-size: 0.5em;
+    }
+
+    /* catalogue */
+
+    /* liste_anime */
+
+    .recommandations_banque a{
+        width: 100%;
+    }
+
+    .recommandations_banque .liste{
+        margin: 1.5em 0.74em;
+    }
+
+    /* liste_anime */
+}
