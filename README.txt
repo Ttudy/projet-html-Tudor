@@ -19,4 +19,4 @@ Si cela arrive, essaie de changer d’appareil puis de revenir au précédent, o
 
 Par ailleurs, à 100 %, il peut être impossible d’accéder au bas de la page. Dans ce cas, utilise l’option « Fit to window » pour afficher la page entière.
 
-Le site est également sur mon GitHub: 
+Le site est également sur mon GitHub: https://ttudy.github.io/projet-html-Tudor/
