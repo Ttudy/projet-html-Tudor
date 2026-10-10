@@ -554,6 +554,13 @@ form textarea{
     color: #fff;
 }
 
+.message_banque h1 {
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
 .problème{
     padding: 1em;
     margin: 1em;
@@ -664,13 +671,15 @@ form textarea{
     gap: 1em;
 }
 
-.recommandations_banque div div:first-of-type p:first-of-type{
+.recommandations_banque div div:first-of-type h1{
+    line-height: 1.5;
+    padding: 0;
     color: #006b4f;
     font-weight: bold;
     font-size: 1.8em;
 }
 
-.recommandations_banque div div:first-of-type p:last-of-type{
+.recommandations_banque div div:first-of-type p{
     color: #595959;
     font-size: 0.9em;
 }
@@ -935,8 +944,17 @@ form textarea{
 
     /* catalogue */
 
+    .catalogue .produits{
+        padding: 1em 0.5em;
+    }
+
     .catalogue .carte{
-        width: 10em;
+        width: 10.5em;
+        height: fit-content;
+    }
+
+    .catalogue .infos{
+        padding: 0.7em 0.6em;
     }
 
     .catalogue .infos h2{
