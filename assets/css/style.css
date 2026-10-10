@@ -658,6 +658,7 @@ form textarea{
 
 .recommandations_banque div div:last-of-type{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1em;
@@ -963,7 +964,7 @@ form textarea{
     }
 
     .recommandations_banque .liste{
-        margin: 1.5em 1em;
+        margin: 1.5em 0.74em;
     }
 
     /* liste_anime */
