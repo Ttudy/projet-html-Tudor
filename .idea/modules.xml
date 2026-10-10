@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/projet-html-Tudor.iml" filepath="$PROJECT_DIR$/.idea/projet-html-Tudor.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/projet html Tudor.iml" filepath="$PROJECT_DIR$/.idea/projet html Tudor.iml" />
+>>>>>>> 8438fc29e729d2e9a3b6936ca60e64e17e1364b4
     </modules>
   </component>
 </project>
